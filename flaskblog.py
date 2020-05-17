@@ -18,13 +18,13 @@ posts = [
 
 # the root page "/"
 @app.route("/")
-@app.route("/home", posts=posts)
+@app.route("/home")
 def home():
-    return render_template('home.html')
+    return render_template('home.html', posts=posts)
 
 @app.route("/about")
 def about():
-    return render_template('about.html')
+    return render_template('about.html', title='About')
 
 
 # this part allows us to run the python script directly without run through export FLASK_DEBUG=1 flask run
