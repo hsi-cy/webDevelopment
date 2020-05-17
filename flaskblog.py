@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 app = Flask(__name__)
 # double underscore name is a name of the module. if we run the script with python directly then double underscore name can be equal to double underscore main
 posts = [
