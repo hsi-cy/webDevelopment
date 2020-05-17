@@ -15,5 +15,5 @@ def main():
     for flight in flights:
         print(f"{flight.origin} to {flight.destination}, {flight.duration} minutes ")
 
-def __name__ == "__main__":
-    main()
+# def __name__ == "__main__":
+#     main()
